@@ -5,12 +5,18 @@ body {
   line-height: 1.6;
 }
 
-header, footer {
+header{
   color: #444;
   padding: 1rem;
   text-align: center;
-  margin-top: -40px;
+  margin-top: -30px;
 }
+
+footer {
+  color: #444;
+  padding-bottom: 1rem;
+  margin-bottom: 10px;
+ }
 
 nav a {
   color: #444;
