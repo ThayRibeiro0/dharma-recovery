@@ -1,54 +1,101 @@
-# React + TypeScript + Vite
+# 🧘 Recovery Dharma Costa Mesa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is an informational website for the **Recovery Dharma Costa Mesa** group, which follows a mindfulness-based approach to the path to recovery. The application was built with **Python (Flask)** and is deployed on **Render**.
 
-Currently, two official plugins are available:
+## 📌 Visit the website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌐 [https://recovery-dharma-costa-mesa.onrender.com](https://recovery-dharma-costa-mesa.onrender.com)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 📸 Screenshots
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+<div>
+  <img src="./screenshots/cap1.png" alt="cap1" width="600" height="300">
+  <img src="./screenshots/cap2.png" alt="cap2" width="600" height="300">
+  <img src="./screenshots/cap3.png" alt="cap3" width="600" height="300">
+  <img src="./screenshots/cap4.png" alt="cap4" width="600" height="300">
+  <img src="./screenshots/cap5.png" alt="cap5" width="600" height="300">
+</div>
+
+---
+
+## 💡 Objective
+
+To provide a simple and accessible online presence so that members and new participants can find information about:
+
+- What is Recovery Dharma
+- Available meetings
+- Contact
+- Useful resources for recovery
+
+---
+
+## 🛠️ Technologies used
+
+- **Python**: Main back-end language
+- **Flask**: Microframework to create the web application
+- **HTML + CSS**: To structure and style the pages
+- **Gunicorn**: WSGI server to deploy on Render
+- **Render**: Hosting platform used to deploy the application
+
+
+---
+
+## ⚙️ How to run locally
+
+> Requires: Python 3.11+ and pip
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/ThayRibeiro0/recovery_dharma-costa-mesa.git
+cd recovery_dharma-costa-mesa
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Create and activate an environment virtual
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+python -m venv .venv
+source .venv/bin/activate # On Windows: .venv\Scripts\activate
 ```
+
+3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+Start the local server
+```
+
+```bash
+flask run
+Access it at: http://localhost:5000
+```
+
+## 🚀 Deploy
+
+The application is hosted on Render as a web service. Deployment is done automatically when you push to the main branch.
+
+Production Commands
+
+1. Build Command:
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Start Command:
+
+```bash
+gunicorn app:app
+```
+
+## 📬 Contact
+For more information, suggestions or contributions, please contact:
+📧 thaysmoiaribeiro@gmail.com
+
+## 🧘 About Recovery Dharma
+Recovery Dharma is an approach based on meditation practices, Buddhist wisdom and mutual support. The community offers support for anyone seeking recovery from addiction and suffering, in an inclusive and compassionate environment.
+
+## 📝 License
+This project is open source and is under the MIT license.
+**
