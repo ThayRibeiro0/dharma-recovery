@@ -1,6 +1,6 @@
 .about-section {
   background: url('../static/fenix.png') no-repeat center center fixed;
-  background-size: cover;
+  background-size: contain;
   min-height: 10vh;
 }
 
